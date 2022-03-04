@@ -10,7 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".Perfil"
+            android:exported="false" />
+        <activity
+            android:name=".Visita"
+            android:exported="false" />
+        <activity
+            android:name=".Reservar"
+            android:exported="false" />
+        <activity
             android:name=".Inicio"
+            android:exported="false" />
+        <activity
+            android:name=".Registro"
             android:exported="false" />
         <activity
             android:name=".Sesion"
