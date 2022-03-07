@@ -99,14 +99,13 @@
         android:id="@+id/linearLayout2"
         android:layout_width="146dp"
         android:layout_height="164dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="44dp"
         android:background="@drawable/boton_borde"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.492">
+        app:layout_constraintTop_toBottomOf="@+id/saludo"
+        app:layout_constraintVertical_bias="0.071">
 
 
         <ImageButton
@@ -149,15 +148,14 @@
         android:layout_width="146dp"
         android:layout_height="164dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
         android:background="@drawable/boton_borde"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
-        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.492">
+        app:layout_constraintTop_toBottomOf="@+id/saludo"
+        app:layout_constraintVertical_bias="0.071">
 
 
         <ImageButton
