@@ -23,7 +23,7 @@
         app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
     <TextView
-        android:id="@+id/reser_visi"
+        android:id="@+id/registro_usu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -47,7 +47,7 @@
         android:background="@drawable/boton_borde"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reser_visi" />
+        app:layout_constraintTop_toBottomOf="@+id/registro_usu" />
 
     <Spinner
         android:id="@+id/spinner"
@@ -64,13 +64,13 @@
         android:id="@+id/atras"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/reser_visi"
+        android:layout_below="@+id/registro_usu"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/flecha3"
         android:backgroundTint="#FFFFFF"
-        app:layout_constraintEnd_toStartOf="@+id/reser_visi"
+        app:layout_constraintEnd_toStartOf="@+id/registro_usu"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
