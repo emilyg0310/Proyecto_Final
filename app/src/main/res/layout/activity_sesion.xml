@@ -29,7 +29,7 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/border"
         android:ems="10"
-        android:hint="Usuario"
+        android:hint="Correo"
         android:inputType="textPersonName"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"

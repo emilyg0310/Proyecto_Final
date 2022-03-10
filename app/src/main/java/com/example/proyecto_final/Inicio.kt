@@ -3,8 +3,11 @@ package com.example.proyecto_final
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.ImageButton
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class Inicio : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,7 +35,10 @@ class Inicio : AppCompatActivity() {
         cerrar.setOnClickListener{
             val pase_vista = Intent(this, Sesion::class.java)
             startActivity(pase_vista)
+            Firebase.auth.signOut()
+            finish()
         }
 
     }
+
 }
