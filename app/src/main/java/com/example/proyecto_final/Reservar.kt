@@ -19,6 +19,11 @@ class Reservar : AppCompatActivity() {
         }
 
         val spinner = findViewById<Spinner>(R.id.spinner)
+        ArrayAdapter.createFromResource(this, R.array.horarios, android.R.layout.simple_spinner_item)
+            .also { adapter ->
+                adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown)
+                spinner.adapter = adapter
+            }
 
 
     }

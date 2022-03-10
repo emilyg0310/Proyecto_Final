@@ -1,5 +1,6 @@
 package com.example.proyecto_final
 
+import android.app.ProgressDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -26,6 +27,8 @@ class Registro : AppCompatActivity() {
         setContentView(binding.root)
         FirebaseApp.initializeApp(this)
         auth = Firebase.auth
+        fStore = FirebaseFirestore.getInstance()
+
 
 
         binding.registrarse.setOnClickListener{
@@ -39,6 +42,7 @@ class Registro : AppCompatActivity() {
         val email = binding.Correo.text.toString()
         val cedula = binding.Cedula.text.toString()
         val clave = binding.ContraseA.text.toString()
+        val barraProgre = ProgressDialog(baseContext)
         if (!inputCheck(nombre, apellidos, email, cedula, clave)) {
             Toast.makeText(baseContext, "Por favor llenar todos los campos", Toast.LENGTH_LONG)
                 .show()
@@ -74,12 +78,17 @@ class Registro : AppCompatActivity() {
                             "cedula" to cedula
                         )
                         documentReference.set(datauser).addOnCompleteListener(){
-
+                            Log.d("Registro", "Información extra del usuario creada")
+                            barraProgre.dismiss()
+                            Toast.makeText(baseContext, "Registro Correctamente", Toast.LENGTH_LONG).show()
+                            actualiza(user)
+                        }.addOnFailureListener(){
+                            Toast.makeText(baseContext, "Hubo un fallo en guardar datos personales", Toast.LENGTH_LONG).show()
                         }
 
 
 
-                        actualiza(user)
+
                     } else {
                         Log.d("creando usuario", "Falló")
                         Toast.makeText(baseContext, "Falló", Toast.LENGTH_LONG).show()
