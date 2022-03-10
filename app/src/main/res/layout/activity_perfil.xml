@@ -7,24 +7,23 @@
     android:background="@drawable/discos"
     tools:context=".Perfil">
 
-
     <Button
-        android:id="@+id/registrarse3"
+        android:id="@+id/guardar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_rounde"
-        android:text="Registrarme"
+        android:text="Guardar"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nom_Usuario12" />
+        app:layout_constraintTop_toBottomOf="@+id/telefono" />
 
     <EditText
-            android:id="@+id/nom_Usuario7"
+            android:id="@+id/nombre"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="32dp"
@@ -41,7 +40,7 @@
             app:layout_constraintTop_toBottomOf="@+id/perfil_usua" />
 
     <EditText
-        android:id="@+id/nom_Usuario8"
+        android:id="@+id/apellido"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
@@ -49,16 +48,16 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/border"
         android:ems="10"
-        android:hint="Nombre "
+        android:hint="Apellido"
         android:inputType="textPersonName"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nom_Usuario7" />
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
 
     <EditText
-        android:id="@+id/nom_Usuario9"
+        android:id="@+id/correoUsua"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
@@ -66,16 +65,16 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/border"
         android:ems="10"
-        android:hint="Nombre "
+        android:hint="Correo"
         android:inputType="textPersonName"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nom_Usuario8" />
+        app:layout_constraintTop_toBottomOf="@+id/apellido" />
 
     <EditText
-        android:id="@+id/nom_Usuario10"
+        android:id="@+id/cedulaUsua"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
@@ -83,16 +82,16 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/border"
         android:ems="10"
-        android:hint="Nombre "
+        android:hint="Cédula"
         android:inputType="textPersonName"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nom_Usuario9" />
+        app:layout_constraintTop_toBottomOf="@+id/correoUsua" />
 
     <EditText
-        android:id="@+id/nom_Usuario11"
+        android:id="@+id/nacimiento"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
@@ -100,16 +99,16 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/border"
         android:ems="10"
-        android:hint="Nombre "
+        android:hint="Fecha de nacimiento"
         android:inputType="textPersonName"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nom_Usuario10" />
+        app:layout_constraintTop_toBottomOf="@+id/cedulaUsua" />
 
     <EditText
-        android:id="@+id/nom_Usuario12"
+        android:id="@+id/telefono"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
@@ -117,13 +116,13 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/border"
         android:ems="10"
-        android:hint="Nombre "
+        android:hint="Télefono"
         android:inputType="textPersonName"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nom_Usuario11" />
+        app:layout_constraintTop_toBottomOf="@+id/nacimiento" />
 
     <TextView
         android:id="@+id/perfil_usua"
@@ -151,6 +150,7 @@
         android:background="@drawable/flecha3"
         android:backgroundTint="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
