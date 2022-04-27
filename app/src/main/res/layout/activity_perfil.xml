@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
     <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -38,7 +39,7 @@
             android:background="@drawable/border"
             android:ems="10"
             android:hint="Nombre "
-            android:inputType="textPersonName"
+            android:inputType="text"
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -55,7 +56,7 @@
         android:background="@drawable/border"
         android:ems="10"
         android:hint="Apellido"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -72,7 +73,7 @@
         android:background="@drawable/border"
         android:ems="10"
         android:hint="Cédula"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -89,7 +90,7 @@
         android:background="@drawable/border"
         android:ems="10"
         android:hint="Télefono"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -106,7 +107,7 @@
         android:background="@drawable/border"
         android:ems="10"
         android:hint="Fecha de nacimiento"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -123,7 +124,7 @@
         android:background="@drawable/border"
         android:ems="10"
         android:hint="Género"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -140,7 +141,7 @@
         android:background="@drawable/border"
         android:ems="10"
         android:hint="Dirección"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -157,7 +158,7 @@
         android:background="@drawable/border"
         android:ems="10"
         android:hint="Contacto de emergencia"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -174,7 +175,7 @@
         android:background="@drawable/border"
         android:ems="10"
         android:hint="Télefono de emergencia"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -212,3 +213,4 @@
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
+</layout>

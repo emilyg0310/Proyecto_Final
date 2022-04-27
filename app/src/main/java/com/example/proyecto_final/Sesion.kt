@@ -29,11 +29,6 @@ class Sesion : AppCompatActivity() {
             haceLogin();
         }
 
-        val registrar= findViewById<Button>(R.id.registrar)
-        registrar.setOnClickListener{
-            val pase_vista = Intent(this, Registro::class.java)
-            startActivity(pase_vista)
-        }
         }
 
     private fun actualiza(user: FirebaseUser?) {
